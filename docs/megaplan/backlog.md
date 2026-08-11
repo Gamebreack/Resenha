@@ -36,6 +36,8 @@
 - B-024: Email and calendar daily agenda
 - B-025: Fix mypy type errors
 - B-026: Expand RSS Sources — Tech, Finance, Politics, Culture
+- B-027: Proteção de persistência local contra concorrência
+- B-028: Tornar o scheduler consciente de timezone e misfires
 
 ## Detail Files
 - [B-001](backlog-items/B-001.md)
@@ -64,3 +66,5 @@
 - [B-024](backlog-items/B-024.md)
 - [B-025](backlog-items/B-025.md)
 - [B-026](backlog-items/B-026.md)
+- [B-027](backlog-items/B-027.md)
+- [B-028](backlog-items/B-028.md)
