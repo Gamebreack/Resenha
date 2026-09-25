@@ -22,3 +22,4 @@ class Settings(BaseSettings):
     cache_db_path: Path = Path("data/resenha.db")
     premarket_hour: int = 7
     eod_hour: int = 19
+    google_token_path: Path = Path.home() / ".hermes" / "google_token.json"

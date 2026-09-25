@@ -11,12 +11,13 @@ Copie `.env.example` para `.env` e preencha:
 - `GOOGLE_SHEET_TAB`: aba da carteira, normalmente `Consolidado`.
 - `CACHE_DB_PATH`: caminho do SQLite local.
 - `PREMARKET_HOUR`: hora local do pré-mercado.
+- `GOOGLE_TOKEN_PATH`: caminho do arquivo de token OAuth do Google (opcional; possui um padrão local).
 
 Nunca versione `.env` ou tokens OAuth.
 
 ## Google Workspace
 
-As integrações de Sheets, Gmail e Calendar usam o token OAuth compartilhado pelo ambiente em `the configured Google OAuth token file`. O token deve possuir os escopos necessários para ler a planilha, a agenda e os emails definidos pelo código.
+As integrações de Sheets, Gmail e Calendar usam um arquivo de token OAuth do Google configurado via `GOOGLE_TOKEN_PATH`. O token deve possuir os escopos necessários para ler a planilha, a agenda e os emails definidos pelo código.
 
 ## Instalação
 

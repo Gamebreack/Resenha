@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "resenha"
 version = "0.1.0"
-description = "Daily LLM-powered financial news briefing bot for Discord"
+description = "AI-powered financial briefing pipeline using Gemini, market data, RSS, Google Workspace and Discord."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

@@ -38,10 +38,12 @@ def _parse_number(val: str) -> float:
     return float(cleaned)
 
 
-def read_portfolio(sheet_id: str, tab_name: str) -> list[Asset]:
+def read_portfolio(
+    sheet_id: str, tab_name: str, token_path: Path | None = None
+) -> list[Asset]:
     """Fetch portfolio data from a Google Sheet tab."""
-    token_path = Path.home() / ".hermes" / "google_token.json"
-    creds = Credentials.from_authorized_user_file(str(token_path))
+    resolved = token_path or (Path.home() / ".hermes" / "google_token.json")
+    creds = Credentials.from_authorized_user_file(str(resolved))
     service = build("sheets", "v4", credentials=creds)
 
     range_name = f"{tab_name}!A1:M20"

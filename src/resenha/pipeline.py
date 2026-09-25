@@ -35,7 +35,11 @@ async def run_pipeline(settings: Settings, style: str) -> str:
 
     # 1. Read portfolio (with fallback)
     assets = _try_step(
-        lambda: read_portfolio(settings.google_sheet_id, settings.google_sheet_tab),
+        lambda: read_portfolio(
+            settings.google_sheet_id,
+            settings.google_sheet_tab,
+            settings.google_token_path,
+        ),
         "portfolio read",
         [],
     )
@@ -60,7 +64,7 @@ async def run_pipeline(settings: Settings, style: str) -> str:
     )
 
     # 3.5. Fetch agenda (calendar + relevant emails)
-    token_path = Path.home() / ".hermes" / "google_token.json"
+    token_path = settings.google_token_path
     events = _try_step(
         lambda: fetch_calendar_events(token_path),
         "calendar fetch",

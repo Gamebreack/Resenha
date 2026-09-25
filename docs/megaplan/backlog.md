@@ -38,6 +38,8 @@
 - B-026: Expand RSS Sources — Tech, Finance, Politics, Culture
 - B-027: Proteção de persistência local contra concorrência
 - B-028: Tornar o scheduler consciente de timezone e misfires
+- B-029: Tornar dependências reprodutíveis com lockfile
+- B-030: Tratamento operacional de erros do Gemini
 
 ## Detail Files
 - [B-001](backlog-items/B-001.md)
@@ -68,3 +70,5 @@
 - [B-026](backlog-items/B-026.md)
 - [B-027](backlog-items/B-027.md)
 - [B-028](backlog-items/B-028.md)
+- [B-029](backlog-items/B-029.md)
+- [B-030](backlog-items/B-030.md)

@@ -41,4 +41,4 @@ O cache local pode ser recriado removendo o banco em `data/`, desde que isso sej
 
 ## Contato operacional
 
-O canal de entrega é definido por `DISCORD_CHANNEL_ID`; não há URL remota Git configurada neste checkout neste momento.
+O canal de entrega é definido por `DISCORD_CHANNEL_ID`.
